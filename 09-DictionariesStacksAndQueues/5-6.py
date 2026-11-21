@@ -1,0 +1,19 @@
+# Write a program that creates a dictionary called 
+# person containing data from the two other dictionaries. 
+
+basic_data = {
+    "name": "Barbara",
+    "age": 21
+}
+
+advanced_data = {
+    "status": "student",
+    "married": False,
+    "interest": ["reading", "swimming"]
+}
+
+# Combine both dictionaries into a new dictionary
+person = basic_data | advanced_data
+
+for key, value in person.items():
+    print(f"{key}: {value}")
